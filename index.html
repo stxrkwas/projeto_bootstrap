@@ -5,30 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <title>BootStrap</title>
 </head>
 <body class="bg-body-tertiary">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <div class="container text-center bg-body-tertiary">
+    <div class="container text-center">
         <div class="row">
             <div class="col-1"></div>
-            <div class="col-bg-primary">
+            <div class="col">
                 <nav class= "navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#">SISTEMA WEB</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Cadastrar</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Consultar</a>
-                                </li>
-                            </ul>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <div class="navbar-nav">
+                                <a class="nav-link active" aria-current="page" href="#">Cadastrar</a>
+                                &nbsp;
+                                <a class="nav-link" href="#">Consultar</a>
+                            </div>
                         </div>
                     </div>
                 </nav>
@@ -48,25 +44,22 @@
                 &nbsp;
             </div>
         </div>
-        <div class="row">
-            <div class="col-1">
-                &nbsp;
-            </div>
+        <div class="mb-3 text-bg-light p-4">
             <div class="col bg-white">
                 <p class="text-start fs-5">Cadastrar - Agenadamento de Potenciais Clientes</p>
                 <p class="text-start fs-6">Sistema utilizado para agendamento para agendamento de serviços.</p>
                 <p>
                     <form>
                         <div class="mb-3 text-start">
-                            <label for="exampleInputEmail1" class="form-label">Nome:</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <label for="exampleInputNome1" class="form-label">Nome:</label>
+                            <input type="name" class="form-control" id="exampleInputNome1" aria-describedby="nomeHelp">
                         </div>
                         <div class="mb-3 text-start">
-                            <label for="exampleInputEmail1" class="form-label">Telefone:</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="(xx) xxxxx-xxxx" aria-describedby="emailHelp">
+                            <label for="exampleInputTelefone1" class="form-label">Telefone:</label>
+                            <input type="tel" class="form-control" id="exampleInputTelefone1" placeholder="(xx) xxxxx-xxxx" aria-describedby="telefoneHelp">
                         </div>
                         <div class="mb-3 text-start">
-                            <label for="exampleInputEmail1" class="form-label">Origem:</label>
+                            <label for="exampleInputOrigem1" class="form-label">Origem:</label>
                             <select class="form-select" aria-label="Default select example">
                                 <option selected>Celular</option>
                                 <option value="1">Whatsapp</option>
@@ -74,11 +67,11 @@
                             </select>
                         </div>
                         <div class="mb-3 text-start">
-                            <label for="exampleInputEmail1" class="form-label">data do Contato:</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="dd/mm/aaaa"aria-describedby="emailHelp">
+                            <label for="exampleInputDate1" class="form-label">Data do Contato:</label>
+                            <input type="date" class="form-control" id="exampleInputDate1" placeholder="dd/mm/aaaa" aria-describedby="dataHelp">
                         </div>
                         <div class="mb-3 text-start">
-                            <label for="exampleInputEmail1" class="form-label">Observação:</label>
+                            <label for="exampleInputObservacao1" class="form-label">Observação:</label>
                             <textarea class="form-control" placeholder="" id="floatingTextarea2" style="height: 100px"></textarea>
                         </div>
                         <div class="mb-3 text-start">
